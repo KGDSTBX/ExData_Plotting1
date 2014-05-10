@@ -18,7 +18,7 @@ devOptions("png", width = 480,height =480)
 
 ## Plot 2
 Date1<-as.POSIXct(paste(hecs$Date,hecs$Time))
-plot(Date1, hecs$Global_active_power/1000,ylab=" Global Active Power (kilowatts)",xlab="","l")
+plot(Date1, hecs$Global_active_power,ylab=" Global Active Power (kilowatts)",xlab="","l")
 dev.copy(png, file = "plot2.png")
 dev.off() 
 
